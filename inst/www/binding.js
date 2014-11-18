@@ -355,7 +355,7 @@ var dataframe = (function() {
     }
   };
   
-    methods.addWMS = function(url,layer,time,scaleRange,nBands,elevation) {
+    methods.addWMS = function(url,layer,time,scaleRange,nBands,elevation,layerId) {
     //url = 'http://thredds.met.no/thredds/wms/topaz/dataset-topaz4-arc-myoceanv2-be?'
     //layer = 'temperature'
     //time = "2014-08-10T00:00:00.000Z"
@@ -375,7 +375,7 @@ var dataframe = (function() {
 
     });
 
-    self.WMSLayers.add(wms, 'wms');
+    self.WMSLayers.add(wms, layerId);
     
     
   };
