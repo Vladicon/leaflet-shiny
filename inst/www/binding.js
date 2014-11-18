@@ -370,7 +370,8 @@ var dataframe = (function() {
     transparent: true,
     time: time,
     COLORSCALERANGE:scaleRange,
-    NUMCOLORBANDS:nBands
+    NUMCOLORBANDS:nBands,
+    elevation:elevation
 
     });
 
